@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superannuation Clearing Houses Compared | JJ162 Chartered Accountants</title>
+<meta name="description" content="A detailed comparison of Australia's top superannuation clearing houses — SuperChoice, QuickSuper, SACH, Employsure and SmartSuper — to help employers choose the right one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1117;
+    --paper: #f5f2ec;
+    --gold: #b8965a;
+    --gold-light: #d4b07a;
+    --cream: #ede8df;
+    --mid: #6b6459;
+    --rule: rgba(184,150,90,0.25);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 3.5rem;
+    background: rgba(245,242,236,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 0.9rem;
+    text-decoration: none; color: inherit;
+  }
+  .nav-logo {
+    width: 36px; height: 36px;
+    background: var(--ink);
+    border-radius: 4px;
+    display: grid; place-items: center;
+  }
+  .nav-logo span {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .nav-back {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 0.5rem;
+    transition: color .2s;
+  }
+  .nav-back:hover { color: var(--gold); }
+
+  /* ─── ARTICLE HERO ─── */
+  .article-hero {
+    padding: 9rem 3.5rem 4rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .article-category {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    display: flex; align-items: center; gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .article-category::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 1px;
+    background: var(--gold);
+  }
+  .article-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 1.8rem;
+    letter-spacing: -0.01em;
+  }
+  .article-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .article-meta {
+    display: flex; align-items: center; gap: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  .meta-author {
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .meta-avatar {
+    width: 40px; height: 40px;
+    background: var(--ink);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .meta-author-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .meta-author-title {
+    font-size: 0.75rem;
+    color: var(--mid);
+    margin-top: 0.15rem;
+  }
+  .meta-divider {
+    width: 1px; height: 32px;
+    background: var(--rule);
+  }
+  .meta-date, .meta-read {
+    font-size: 0.75rem;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+  }
+
+  /* ─── ARTICLE BODY ─── */
+  .article-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 3.5rem 6rem;
+  }
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #2a2720;
+    margin-bottom: 1.6rem;
+  }
+  .article-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 3.5rem 0 1.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .article-body h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--mid);
+    margin: 1.5rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    font-size: 0.78rem;
+  }
+  .article-body strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .article-body a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(184,150,90,0.35);
+    transition: border-color .2s;
+  }
+  .article-body a:hover { border-color: var(--gold); }
+  .article-body ul {
+    margin: 0.8rem 0 1.6rem 1.5rem;
+  }
+  .article-body ul li {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #2a2720;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Pull quote */
+  .pull-quote {
+    margin: 2.5rem 0;
+    padding: 2rem 2.5rem;
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+  }
+  .pull-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem !important;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink) !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  /* Provider card */
+  .provider-card {
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+  }
+  .provider-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+  }
+  .provider-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(184,150,90,0.15);
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    line-height: 1;
+  }
+  .provider-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .provider-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid);
+    border: 1px solid var(--rule);
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+  }
+  .provider-body p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  .pros, .cons {
+    padding: 1.2rem;
+    border-radius: 4px;
+  }
+  .pros { background: rgba(184,150,90,0.08); }
+  .cons { background: rgba(15,17,23,0.04); }
+  .pros-cons h4 {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+  }
+  .pros h4 { color: var(--gold); }
+  .cons h4 { color: var(--mid); }
+  .pros-cons ul {
+    margin: 0 0 0 1rem !important;
+  }
+  .pros-cons ul li {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    color: var(--mid) !important;
+    margin-bottom: 0.3rem !important;
+  }
+  .provider-meta {
+    display: flex; gap: 2rem; flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  .provider-meta-item {}
+  .provider-meta-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+  }
+  .provider-meta-val {
+    font-size: 0.88rem;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  /* Summary table */
+  .table-wrap {
+    margin: 2.5rem 0;
+    overflow-x: auto;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+  }
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .summary-table th {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .summary-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--rule);
+    color: var(--mid);
+    line-height: 1.5;
+  }
+  .summary-table tr:last-child td { border-bottom: none; }
+  .summary-table tr:nth-child(even) td { background: var(--cream); }
+  .summary-table td:first-child { color: var(--ink); font-weight: 500; }
+  .badge {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+  }
+  .badge-free { background: rgba(184,150,90,0.15); color: var(--gold); }
+  .badge-low { background: rgba(80,160,80,0.12); color: #3a7a3a; }
+  .badge-med { background: rgba(200,140,0,0.12); color: #8a6000; }
+  .badge-high { background: rgba(180,50,50,0.1); color: #b43232; }
+
+  /* CTA */
+  .article-cta {
+    margin: 3rem 0;
+    padding: 2.5rem 3rem;
+    background: var(--ink);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .article-cta-text h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--paper);
+    margin-bottom: 0.4rem;
+  }
+  .article-cta-text p {
+    font-size: 0.88rem !important;
+    color: rgba(245,242,236,0.5) !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+  }
+  .article-cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink) !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    padding: 1rem 2.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .2s, transform .1s;
+  }
+  .article-cta-btn:hover {
+    background: var(--gold-light) !important;
+    border-bottom: none !important;
+    transform: translateY(-1px);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    padding: 2.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.4);
+  }
+  .footer-link {
+    font-size: 0.78rem;
+    color: rgba(245,242,236,0.3);
+    text-decoration: none;
+  }
+  .footer-link:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .article-hero { padding: 7rem 1.5rem 3rem; }
+    .article-body { padding: 0 1.5rem 4rem; }
+    .pros-cons { grid-template-columns: 1fr; }
+    .article-cta { padding: 2rem; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-logo"><span>JJ</span></div>
+    <span class="nav-wordmark">JJ162 Chartered Accountants</span>
+  </a>
+  <a class="nav-back" href="/articles.html">← All Articles</a>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <p class="article-category">Superannuation · Employer Obligations</p>
+  <h1 class="article-title">
+    Choosing the Right<br>
+    <em>Superannuation Clearing House</em><br>
+    for Your Business
+  </h1>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">J</div>
+      <div>
+        <div class="meta-author-name">Johnny — JJ162 Chartered Accountants</div>
+        <div class="meta-author-title">Principal, CA · Sydney NSW</div>
+      </div>
+    </div>
+    <div class="meta-divider"></div>
+    <span class="meta-date">March 2026</span>
+    <div class="meta-divider"></div>
+    <span class="meta-read">7 min read</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="article-body">
+
+  <p>
+    Choosing the right superannuation clearing house is one of those decisions that can save 
+    your business significant time and money — or cost you both if you get it wrong. A clearing 
+    house streamlines the process of paying employee super contributions to multiple funds in a 
+    single transaction, reducing your administrative burden and making compliance far easier 
+    to manage.
+  </p>
+
+  <p>
+    Below is an in-depth comparison of the five most widely used superannuation clearing houses 
+    in Australia — covering features, pricing, support, accuracy, and reporting — so you can 
+    make an informed decision for your business.
+  </p>
+
+  <div class="pull-quote">
+    <p>"The right clearing house can transform super contributions from a monthly headache into a five-minute task."</p>
+  </div>
+
+  <h2>The Five Main Options</h2>
+
+  <!-- SUPERCHOICE -->
+  <div class="provider-card">
+    <span class="provider-num">01</span>
+    <div class="provider-name">SuperChoice</div>
+    <span class="provider-tag">All Business Sizes</span>
+    <div class="provider-body">
+      <p>SuperChoice is one of Australia's most widely used clearing houses, catering to businesses of all sizes. It provides an efficient way to manage super contributions across multiple funds in a single transaction, with strong compliance support and payroll integration.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Strengths</h4>
+          <ul>
+            <li>User-friendly interface</li>
+            <li>Scalable for small and large businesses</li>
+            <li>Robust, customisable reporting tools</li>
+            <li>Comprehensive compliance updates</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Considerations</h4>
+          <ul>
+            <li>Fees vary with usage — can add up</li>
+            <li>Learning curve when integrating with payroll</li>
+          </ul>
+        </div>
+      </div>
+      <div class="provider-meta">
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Cost</div>
+          <div class="provider-meta-val"><span class="badge badge-med">Monthly subscription + transaction fees</span></div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Best For</div>
+          <div class="provider-meta-val">Small to large businesses needing robust reporting</div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Accuracy</div>
+          <div class="provider-meta-val">High — automated compliance checks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICKSUPER -->
+  <div class="provider-card">
+    <span class="provider-num">02</span>
+    <div class="provider-name">QuickSuper</div>
+    <span class="provider-tag">Small to Medium Business</span>
+    <div class="provider-body">
+      <p>QuickSuper is designed specifically for small to medium-sized businesses, offering a straightforward online platform for managing super contributions to multiple funds. Its no-fee model for smaller employers makes it particularly attractive for businesses just starting out.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Strengths</h4>
+          <ul>
+            <li>Free for businesses with fewer than 20 employees</li>
+            <li>Quick and easy setup</li>
+            <li>Simple, clean interface</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Considerations</h4>
+          <ul>
+            <li>Limited advanced features for larger businesses</li>
+            <li>Basic reporting — lacks customisation</li>
+            <li>Longer support response times at peak periods</li>
+          </ul>
+        </div>
+      </div>
+      <div class="provider-meta">
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Cost</div>
+          <div class="provider-meta-val"><span class="badge badge-free">Free under 20 employees</span></div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Best For</div>
+          <div class="provider-meta-val">Small businesses wanting a no-cost solution</div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Accuracy</div>
+          <div class="provider-meta-val">Generally accurate — manual checks recommended for complex contributions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SACH -->
+  <div class="provider-card">
+    <span class="provider-num">03</span>
+    <div class="provider-name">Small Business Superannuation Clearing House (SACH)</div>
+    <span class="provider-tag">Government · Small Business Only</span>
+    <div class="provider-body">
+      <p>SACH is the government-backed clearing house administered by the ATO, available free of charge to eligible small businesses. For sole traders and businesses with fewer than 20 employees, it offers a trusted, no-cost way to meet super obligations — backed by the weight of government oversight.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Strengths</h4>
+          <ul>
+            <li>Completely free for eligible businesses</li>
+            <li>Government-backed — high trust and security</li>
+            <li>Single transaction to multiple funds</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Considerations</h4>
+          <ul>
+            <li>Only available to businesses with fewer than 20 employees</li>
+            <li>Limited support options</li>
+            <li>Lacks advanced features of commercial platforms</li>
+          </ul>
+        </div>
+      </div>
+      <div class="provider-meta">
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Cost</div>
+          <div class="provider-meta-val"><span class="badge badge-free">Completely free</span></div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Best For</div>
+          <div class="provider-meta-val">Sole traders and small businesses under 20 employees</div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Accuracy</div>
+          <div class="provider-meta-val">High — government oversight, but manual verification still recommended</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMPLOYSURE -->
+  <div class="provider-card">
+    <span class="provider-num">04</span>
+    <div class="provider-name">Employsure Super Clearing House</div>
+    <span class="provider-tag">HR-Integrated Platform</span>
+    <div class="provider-body">
+      <p>Employsure's clearing house is part of their broader HR and workplace compliance platform. If you are already using Employsure for HR support, the integrated super clearing functionality adds convenience — though it may not be the most cost-effective choice if you only need the super clearing component.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Strengths</h4>
+          <ul>
+            <li>Seamless integration with HR and payroll</li>
+            <li>Excellent compliance and HR support resources</li>
+            <li>User-friendly interface</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Considerations</h4>
+          <ul>
+            <li>Costs depend on HR service tier chosen</li>
+            <li>Super clearing features lack depth for complex needs</li>
+            <li>Not ideal if you only need a clearing house</li>
+          </ul>
+        </div>
+      </div>
+      <div class="provider-meta">
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Cost</div>
+          <div class="provider-meta-val"><span class="badge badge-med">Varies by HR service level</span></div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Best For</div>
+          <div class="provider-meta-val">Businesses already on the Employsure HR platform</div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Accuracy</div>
+          <div class="provider-meta-val">Good — payroll integration reduces manual entry errors</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SMARTSUPER -->
+  <div class="provider-card">
+    <span class="provider-num">05</span>
+    <div class="provider-name">SmartSuper</div>
+    <span class="provider-tag">All Business Sizes</span>
+    <div class="provider-body">
+      <p>SmartSuper is a flexible clearing house that supports businesses of all sizes, with an emphasis on payroll system integration and electronic submissions. It offers detailed reporting tools and solid compliance resources, though some users find the interface less intuitive than alternatives.</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Strengths</h4>
+          <ul>
+            <li>Works well with a wide range of payroll systems</li>
+            <li>Detailed, customisable reporting</li>
+            <li>Solid compliance support resources</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Considerations</h4>
+          <ul>
+            <li>Monthly fees apply</li>
+            <li>Interface less intuitive than some competitors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="provider-meta">
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Cost</div>
+          <div class="provider-meta-val"><span class="badge badge-med">Monthly fees based on employee count</span></div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Best For</div>
+          <div class="provider-meta-val">Medium to large businesses needing payroll integration and detailed reporting</div>
+        </div>
+        <div class="provider-meta-item">
+          <div class="provider-meta-label">Accuracy</div>
+          <div class="provider-meta-val">Generally high — automated processes minimise errors</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Side-by-Side Summary</h2>
+
+  <div class="table-wrap">
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Best For</th>
+          <th>Cost</th>
+          <th>Reporting</th>
+          <th>Support</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SuperChoice</td>
+          <td>All sizes</td>
+          <td><span class="badge badge-med">Subscription + fees</span></td>
+          <td>Excellent</td>
+          <td>Strong</td>
+        </tr>
+        <tr>
+          <td>QuickSuper</td>
+          <td>Small business</td>
+          <td><span class="badge badge-free">Free &lt;20 employees</span></td>
+          <td>Basic</td>
+          <td>Moderate</td>
+        </tr>
+        <tr>
+          <td>SACH (ATO)</td>
+          <td>Small business</td>
+          <td><span class="badge badge-free">Completely free</span></td>
+          <td>Basic</td>
+          <td>Limited</td>
+        </tr>
+        <tr>
+          <td>Employsure</td>
+          <td>HR-integrated</td>
+          <td><span class="badge badge-med">Varies</span></td>
+          <td>Standard</td>
+          <td>Excellent</td>
+        </tr>
+        <tr>
+          <td>SmartSuper</td>
+          <td>Medium–large</td>
+          <td><span class="badge badge-med">Monthly fees</span></td>
+          <td>Excellent</td>
+          <td>Good</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Our Recommendation</h2>
+
+  <p>
+    The right clearing house depends entirely on your business size, budget, and how 
+    sophisticated your payroll setup is. Here is our practical guidance:
+  </p>
+
+  <p>
+    <strong>Sole traders and businesses under 20 employees</strong> should start with 
+    the ATO's SACH — it is completely free, government-backed, and does exactly what 
+    you need without any unnecessary complexity or cost.
+  </p>
+
+  <p>
+    <strong>Growing businesses that need more features</strong> without committing to 
+    a subscription should look at QuickSuper — free for smaller employers and a clean, 
+    simple platform to work with day-to-day.
+  </p>
+
+  <p>
+    <strong>Medium to large businesses</strong> with complex payroll needs and a desire 
+    for detailed reporting will find SuperChoice or SmartSuper better suited to their 
+    requirements. The additional cost is justified by the depth of functionality.
+  </p>
+
+  <p>
+    <strong>Businesses already on the Employsure platform</strong> for HR support will 
+    find the integrated clearing house a natural fit — the convenience of having super 
+    and HR compliance in one place is hard to argue with if you are already a customer.
+  </p>
+
+  <p>
+    If you are unsure which option suits your situation, we are happy to talk it through. 
+    Getting your super obligations right from the start saves significant time and 
+    avoids penalties down the track.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-text">
+      <h4>Need help with super compliance?</h4>
+      <p>JJ162 Chartered Accountants helps businesses manage payroll, super, and employer obligations. Get in touch for a no-obligation conversation.</p>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Contact JJ162</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-brand">JJ162 Chartered Accountants</span>
+  <a href="/" class="footer-link">← Back to Home</a>
+</footer>
+
+</body>
+</html>
