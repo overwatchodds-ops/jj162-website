@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JJ162 Chartered Accountants | Sydney NSW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1117;
+    --paper: #f5f2ec;
+    --gold: #b8965a;
+    --gold-light: #d4b07a;
+    --cream: #ede8df;
+    --mid: #6b6459;
+    --rule: rgba(184,150,90,0.25);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 3.5rem;
+    background: rgba(245,242,236,0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+    transition: padding .3s;
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 0.9rem;
+    text-decoration: none; color: inherit;
+  }
+  .nav-logo {
+    width: 36px; height: 36px;
+    background: var(--ink);
+    border-radius: 4px;
+    display: grid; place-items: center;
+  }
+  .nav-logo span {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
+  .nav-wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .nav-links {
+    display: flex; gap: 2.5rem; list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--mid);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--ink);
+    color: var(--paper) !important;
+    padding: 0.55rem 1.4rem !important;
+    border-radius: 2px;
+    letter-spacing: 0.1em !important;
+  }
+  .nav-cta:hover { background: var(--gold); color: var(--ink) !important; }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 5rem 6rem 3.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 2.5rem;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--mid);
+    max-width: 42ch;
+    margin-bottom: 3rem;
+  }
+  .hero-actions {
+    display: flex; gap: 1.2rem; align-items: center;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background .25s, color .25s;
+    font-weight: 400;
+  }
+  .btn-primary:hover { background: var(--gold); color: var(--ink); }
+  .btn-ghost {
+    display: inline-block;
+    color: var(--mid);
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: color .2s, border-color .2s;
+  }
+  .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-canvas-wrap {
+    position: absolute; inset: 0;
+    background: var(--ink);
+    overflow: hidden;
+  }
+  .hero-canvas-wrap canvas {
+    width: 100%; height: 100%;
+  }
+  /* Floating quote overlay */
+  .hero-canvas-quote {
+    position: absolute;
+    bottom: 3.5rem; left: 3rem; right: 3rem;
+    pointer-events: none;
+  }
+  .hero-canvas-quote blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 300;
+    color: rgba(245,242,236,0.55);
+    line-height: 1.5;
+    border-left: 2px solid var(--gold);
+    padding-left: 1.2rem;
+  }
+  .hero-canvas-quote cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding-left: 1.2rem;
+  }
+
+  /* Stat strip on hero */
+  .hero-stats {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: var(--ink);
+    display: flex;
+    padding: 0 3.5rem;
+  }
+  .hero-stat {
+    flex: 1;
+    padding: 2rem 0;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    display: flex; flex-direction: column; gap: 0.4rem;
+    padding-right: 2.5rem; padding-left: 2.5rem;
+  }
+  .hero-stat:first-child { padding-left: 0; }
+  .hero-stat:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+  }
+
+  /* ─── SECTION SHARED ─── */
+  section { position: relative; }
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 3.5rem;
+  }
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 30px; height: 1px;
+    background: var(--gold);
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+  .section-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--mid);
+  }
+
+  /* ─── WHY US ─── */
+  .why-section { background: var(--cream); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+  .why-left { }
+  .why-right {
+    display: flex; flex-direction: column; gap: 0;
+  }
+  .why-card {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .5s, transform .5s;
+  }
+  .why-card.visible { opacity: 1; transform: none; }
+  .why-card:first-child { border-top: 1px solid var(--rule); }
+  .card-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    font-weight: 300;
+    line-height: 1;
+    padding-top: 0.2rem;
+  }
+  .card-content h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--mid);
+  }
+
+  /* ─── SERVICES ─── */
+  .services-section { background: var(--ink); }
+  .services-section .section-title { color: var(--paper); }
+  .services-section .section-body { color: rgba(245,242,236,0.55); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    margin-top: 3.5rem;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .service-tile {
+    padding: 2.5rem 2rem;
+    background: var(--ink);
+    transition: background .25s;
+    cursor: default;
+  }
+  .service-tile:hover { background: rgba(184,150,90,0.08); }
+  .service-icon {
+    width: 42px; height: 42px;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  .service-tile h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--paper);
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+  .service-tile p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(245,242,236,0.5);
+  }
+  .service-tag {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(184,150,90,0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+  }
+
+  /* ─── CLIENTS ─── */
+  .clients-section {
+    background: var(--paper);
+  }
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-top: 3.5rem;
+  }
+  .client-card {
+    background: var(--cream);
+    padding: 2.5rem 2rem;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .client-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s;
+  }
+  .client-card:hover::before { transform: scaleX(1); }
+  .client-card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .client-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+  }
+  .client-card p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--mid);
+  }
+
+  /* ─── ABOUT ─── */
+  .about-section { background: var(--cream); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+  /* Values panel — replaces the photo */
+  .about-values-panel {
+    background: var(--ink);
+    border-radius: 4px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-values-panel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+  .about-values-panel::after {
+    content: '"';
+    position: absolute;
+    bottom: -1.5rem; right: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14rem;
+    font-weight: 600;
+    color: rgba(184,150,90,0.06);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .about-panel-heading {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .about-panel-heading::before {
+    content: '';
+    display: inline-block;
+    width: 24px; height: 1px;
+    background: var(--gold);
+  }
+  .about-value-row {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: baseline;
+    gap: 1.2rem;
+  }
+  .about-value-row:last-child { border-bottom: none; }
+  .value-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: var(--gold);
+    font-style: italic;
+    flex-shrink: 0;
+    line-height: 1;
+    width: 24px;
+    text-align: center;
+  }
+  .value-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(245,242,236,0.82);
+    line-height: 1.4;
+  }
+  .value-text em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .about-panel-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-panel-years {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .about-panel-years-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(245,242,236,0.35);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .about-right .section-body {
+    margin-bottom: 1.5rem;
+  }
+  .about-pill-row {
+    display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem;
+  }
+  .about-pill {
+    padding: 0.4rem 1rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    color: var(--mid);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── CONTACT ─── */
+  .contact-section { background: var(--ink); }
+  .contact-section .section-title { color: var(--paper); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+    margin-top: 3.5rem;
+  }
+  .contact-info { }
+  .contact-item {
+    display: flex; gap: 1.2rem; align-items: flex-start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .contact-item:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+  .contact-icon {
+    width: 36px; height: 36px; flex-shrink: 0;
+    border: 1px solid rgba(184,150,90,0.3);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    color: var(--gold);
+    font-size: 0.9rem;
+  }
+  .contact-item-body {}
+  .contact-item-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.35);
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+  }
+  .contact-item-val {
+    font-size: 0.95rem;
+    color: var(--paper);
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  a.contact-item-val:hover { color: var(--gold); }
+
+  /* Form */
+  .contact-form {
+    display: flex; flex-direction: column; gap: 1.2rem;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .form-group {
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .form-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.4);
+    font-weight: 400;
+  }
+  .form-input {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    padding: 0.85rem 1rem;
+    color: var(--paper);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color .2s;
+  }
+  .form-input:focus { border-color: var(--gold); }
+  .form-input::placeholder { color: rgba(245,242,236,0.2); }
+  textarea.form-input { resize: vertical; min-height: 120px; }
+  .form-submit {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    padding: 1rem 2.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background .2s, transform .1s;
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #080a0e;
+    padding: 3rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.5);
+  }
+  .footer-details {
+    font-size: 0.78rem;
+    color: rgba(245,242,236,0.25);
+    line-height: 1.6;
+    text-align: center;
+  }
+  .footer-legal {
+    font-size: 0.75rem;
+    color: rgba(245,242,236,0.25);
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  .fade-up {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity .65s, transform .65s;
+  }
+  .fade-up.visible { opacity: 1; transform: none; }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 5rem 1.5rem 3rem; }
+    .hero-right { height: 40vw; min-height: 250px; position: relative; }
+    .hero-stats { position: static; flex-wrap: wrap; padding: 0 1.5rem; }
+    .hero-stat { padding: 1.5rem 1rem; min-width: 45%; }
+    .section-inner { padding: 4rem 1.5rem; }
+    .why-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .clients-grid { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+
+    footer { flex-direction: column; text-align: center; }
+    .footer-legal { text-align: center; }
+  }
+  @media (max-width: 600px) {
+    .services-grid, .clients-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a class="nav-brand" href="#">
+    <div class="nav-logo"><span>JJ</span></div>
+    <span class="nav-wordmark">JJ162 Chartered Accountants</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#clients">Who We Help</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Sydney, NSW · Est. 20+ Years</p>
+    <h1 class="hero-title">
+      Accounting built on<br>
+      <em>trust, precision</em><br>
+      and real results.
+    </h1>
+    <p class="hero-sub">
+      JJ162 Chartered Accountants delivers expert tax minimisation, 
+      business advisory, and financial clarity — for small businesses, 
+      healthcare professionals, and not-for-profits across Australia.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+      <a href="#services" class="btn-ghost">View Our Services →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-canvas-wrap">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-canvas-quote">
+        <blockquote>
+          "The art of taxation consists in so plucking the goose as to obtain the largest possible amount of feathers with the smallest possible amount of hissing."
+        </blockquote>
+        <cite>Jean-Baptiste Colbert · We prefer the smarter approach.</cite>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="stat-num">20+</span>
+      <span class="stat-label">Years of Experience</span>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-num">CA</span>
+      <span class="stat-label">Chartered Accountants</span>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-num">4+</span>
+      <span class="stat-label">Sectors Served</span>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-num">$0</span>
+      <span class="stat-label">Consultation Fee</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY US ─── -->
+<section class="why-section" id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="why-left">
+        <p class="section-label fade-up">Why Choose Us</p>
+        <h2 class="section-title fade-up">Your financial success<br>is our <em>expertise</em>.</h2>
+        <p class="section-body fade-up">
+          With over two decades in Australian taxation and small business accounting, 
+          we've built lasting relationships on the foundations of honest, 
+          personalised advice — delivered in plain language, not jargon.
+        </p>
+        <br>
+        <p class="section-body fade-up">
+          We monitor tax legislation continuously so you benefit from every 
+          available deduction, and we're proactive — not reactive — in everything we do.
+        </p>
+      </div>
+      <div class="why-right">
+        <div class="why-card">
+          <span class="card-num">01</span>
+          <div class="card-content">
+            <h4>Tax Minimisation Expertise</h4>
+            <p>We actively monitor legislative changes and implement strategies that significantly reduce your tax liabilities every year.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="card-num">02</span>
+          <div class="card-content">
+            <h4>Streamlined Business Structures</h4>
+            <p>We analyse and optimise your entity type, structure, and operations for maximum efficiency and compliance.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="card-num">03</span>
+          <div class="card-content">
+            <h4>Fast & Reliable Service</h4>
+            <p>Responsive, proactive, and always available. We believe in keeping you informed at every step of the process.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="card-num">04</span>
+          <div class="card-content">
+            <h4>Honest, Transparent Advice</h4>
+            <p>Integrity is our foundation. You receive guidance that is clear, ethical, and always in your best interest.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <span class="card-num">05</span>
+          <div class="card-content">
+            <h4>Competitive, Value-Driven Pricing</h4>
+            <p>Premium accounting expertise without the premium price tag. Every dollar spent delivers measurable return.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section class="services-section" id="services">
+  <div class="section-inner">
+    <p class="section-label" style="color:var(--gold)">Our Services</p>
+    <h2 class="section-title fade-up">Comprehensive accounting<br><em>from setup to growth.</em></h2>
+    <p class="section-body fade-up" style="max-width:55ch">
+      From company registration to complex tax strategy, we provide the full 
+      spectrum of financial services your business needs to thrive.
+    </p>
+    <div class="services-grid">
+      <div class="service-tile">
+        <div class="service-icon">§</div>
+        <h3>Tax Planning & Compliance</h3>
+        <p>Income tax returns, BAS, FBT, and proactive planning to maximise deductions and minimise liabilities.</p>
+        <span class="service-tag">Core</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">∑</div>
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Complete financial records management — accurate, organised, and compliant with ATO requirements.</p>
+        <span class="service-tag">Core</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">⊕</div>
+        <h3>Business Advisory</h3>
+        <p>Strategic guidance from financial planning to risk management, helping you navigate growth confidently.</p>
+        <span class="service-tag">Advisory</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">◎</div>
+        <h3>Payroll Services</h3>
+        <p>Accurate, on-time payroll processing that meets all tax and legal obligations — eliminating complications.</p>
+        <span class="service-tag">Operations</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">≡</div>
+        <h3>Company Registration & Setup</h3>
+        <p>TFN, ABN, PAYG registrations and complete company formation — seamless from day one.</p>
+        <span class="service-tag">Setup</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">◈</div>
+        <h3>Auditing & Assurance</h3>
+        <p>Thorough audits to ensure compliance, identify improvement opportunities, and provide financial confidence.</p>
+        <span class="service-tag">Compliance</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">∞</div>
+        <h3>ATO Liaison</h3>
+        <p>We handle all ATO communications — audits, disputes, lodgement frequency, and penalty management.</p>
+        <span class="service-tag">Representation</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">◑</div>
+        <h3>Salary Packaging</h3>
+        <p>Customised packaging solutions that maximise employee satisfaction and deliver significant tax advantages.</p>
+        <span class="service-tag">HR</span>
+      </div>
+      <div class="service-tile">
+        <div class="service-icon">✦</div>
+        <h3>Accounting Software</h3>
+        <p>Expert support across Xero, QuickBooks, MYOB, Reckon, and Excel — tailored to your workflow.</p>
+        <span class="service-tag">Technology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHO WE HELP ─── -->
+<section class="clients-section" id="clients">
+  <div class="section-inner">
+    <p class="section-label fade-up">Who We Help</p>
+    <h2 class="section-title fade-up">Specialists in your <em>industry.</em></h2>
+    <div class="clients-grid">
+      <div class="client-card fade-up">
+        <div class="client-card-icon">🏢</div>
+        <h4>Small Businesses</h4>
+        <p>From startup structures to ongoing bookkeeping and tax compliance — we help entrepreneurs build strong financial foundations.</p>
+      </div>
+      <div class="client-card fade-up">
+        <div class="client-card-icon">📈</div>
+        <h4>Growing Enterprises</h4>
+        <p>Complex financial needs met with strategic advice. We help medium-sized businesses optimise structures and plan for sustainable growth.</p>
+      </div>
+      <div class="client-card fade-up">
+        <div class="client-card-icon">🏥</div>
+        <h4>Healthcare Professionals</h4>
+        <p>Specialists for doctors, dentists, and aged care facilities — navigating unique regulations while optimising financial performance.</p>
+      </div>
+      <div class="client-card fade-up">
+        <div class="client-card-icon">🤝</div>
+        <h4>Not-for-Profits</h4>
+        <p>Responsible financial management, compliance expertise, and funding guidance to help NFPs maximise their community impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section class="about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-values-panel fade-up">
+        <p class="about-panel-heading">Our Core Values</p>
+        <div class="about-value-row">
+          <span class="value-mark">I</span>
+          <span class="value-text"><em>Integrity</em> — we act in your best interest, always.</span>
+        </div>
+        <div class="about-value-row">
+          <span class="value-mark">II</span>
+          <span class="value-text"><em>Clarity</em> — no jargon, no confusion, just plain advice.</span>
+        </div>
+        <div class="about-value-row">
+          <span class="value-mark">III</span>
+          <span class="value-text"><em>Precision</em> — every figure checked, every deadline met.</span>
+        </div>
+        <div class="about-value-row">
+          <span class="value-mark">IV</span>
+          <span class="value-text"><em>Proactivity</em> — we find opportunities before you ask.</span>
+        </div>
+        <div class="about-value-row">
+          <span class="value-mark">V</span>
+          <span class="value-text"><em>Partnership</em> — your success is our measure of success.</span>
+        </div>
+        <div class="about-panel-footer">
+          <span class="about-panel-years">20+</span>
+          <span class="about-panel-years-label">Years serving<br>Australian businesses</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="section-label fade-up">About Us</p>
+        <h2 class="section-title fade-up">A practice built on<br><em>relationships.</em></h2>
+        <p class="section-body fade-up">
+          At JJ162, we believe every client deserves a trusted advisor who 
+          takes the time to understand their unique situation. With over 20 years 
+          serving Australian businesses, we've cultivated deep expertise across 
+          diverse industries.
+        </p>
+        <p class="section-body fade-up" style="margin-top:1rem">
+          We communicate clearly — no jargon, no confusion — and we take 
+          pride in making complex financial matters accessible to everyone 
+          we work with. Our primary goal is always to help you save money 
+          while upholding the highest standards of honesty and integrity.
+        </p>
+        <div class="about-pill-row fade-up">
+          <span class="about-pill">Chartered Accountants</span>
+          <span class="about-pill">Sydney Based</span>
+          <span class="about-pill">ABN 86 665 869 670</span>
+          <span class="about-pill">Xero Certified</span>
+          <span class="about-pill">20+ Years Experience</span>
+        </div>
+        <div style="margin-top:2.5rem" class="fade-up">
+          <a href="#contact" class="btn-primary">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <p class="section-label" style="color:var(--gold)">Contact</p>
+    <h2 class="section-title fade-up">Let's talk about<br><em>your finances.</em></h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">✆</div>
+          <div class="contact-item-body">
+            <p class="contact-item-label">Phone</p>
+            <a class="contact-item-val" href="tel:0290613208">(02) 9061 3208</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">@</div>
+          <div class="contact-item-body">
+            <p class="contact-item-label">Email</p>
+            <a class="contact-item-val" href="mailto:johnny@jj162.com.au">johnny@jj162.com.au</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">◎</div>
+          <div class="contact-item-body">
+            <p class="contact-item-label">Location</p>
+            <span class="contact-item-val">Sydney, NSW, Australia</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⊡</div>
+          <div class="contact-item-body">
+            <p class="contact-item-label">ABN</p>
+            <span class="contact-item-val">86 665 869 670</span>
+          </div>
+        </div>
+        <div style="margin-top:2.5rem">
+          <p style="font-size:0.85rem;line-height:1.7;color:rgba(245,242,236,0.4)">
+            We welcome clients from all industries and backgrounds. 
+            Whether you're just starting out or looking to optimise an 
+            established business, we'd love to help.
+          </p>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input class="form-input" type="text" placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input class="form-input" type="text" placeholder="Smith">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="jane@business.com.au">
+        </div>
+        <div class="form-group">
+          <label class="form-label">How can we help?</label>
+          <textarea class="form-input" placeholder="Tell us about your business and what you're looking for…"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <p id="form-thanks" style="display:none;font-size:0.85rem;color:var(--gold);margin-top:0.5rem">Thanks! We'll be in touch shortly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <span class="footer-brand">JJ162 Chartered Accountants</span>
+  <div class="footer-details">
+    JJ162 Pty Ltd · ABN 86 665 869 670<br>
+    Sydney NSW, Australia
+  </div>
+  <div class="footer-legal">
+    © 2025 JJ162 Pty Ltd<br>
+    All rights reserved
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer for fade-up & why-cards
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-up, .why-card').forEach((el, i) => {
+    el.style.transitionDelay = (i % 4) * 80 + 'ms';
+    obs.observe(el);
+  });
+
+  // Form handler
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('form-thanks').style.display = 'block';
+    e.target.querySelector('.form-submit').disabled = true;
+  }
+
+  // Smooth nav shrink on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.padding = window.scrollY > 60 ? '0.9rem 3.5rem' : '';
+  });
+
+  // ─── HERO CANVAS ANIMATION ───
+  const canvas = document.getElementById('heroCanvas');
+  const ctx = canvas.getContext('2d');
+
+  const GOLD = '#b8965a';
+  const GOLD2 = 'rgba(184,150,90,';
+  const INK  = '#0f1117';
+
+  function resize() {
+    canvas.width  = canvas.offsetWidth  * devicePixelRatio;
+    canvas.height = canvas.offsetHeight * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); });
+
+  // Grid lines
+  const COLS = 8, ROWS = 12;
+
+  // Nodes that pulse
+  class Node {
+    constructor(x, y) {
+      this.x = x; this.y = y;
+      this.r = Math.random() * 2 + 1;
+      this.phase = Math.random() * Math.PI * 2;
+      this.speed = 0.4 + Math.random() * 0.6;
+    }
+    draw(t) {
+      const pulse = 0.5 + 0.5 * Math.sin(t * this.speed + this.phase);
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r + pulse * 3, 0, Math.PI * 2);
+      ctx.fillStyle = GOLD2 + (0.08 + pulse * 0.25) + ')';
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = GOLD2 + (0.4 + pulse * 0.6) + ')';
+      ctx.fill();
+    }
+  }
+
+  // Rising bar chart elements
+  class Bar {
+    constructor(x, maxH, w) {
+      this.x = x; this.maxH = maxH; this.w = w;
+      this.currentH = 0;
+      this.speed = 0.4 + Math.random() * 0.5;
+      this.delay = Math.random() * 60;
+      this.tick = 0;
+    }
+    update() {
+      this.tick++;
+      if (this.tick > this.delay) {
+        this.currentH = Math.min(this.currentH + this.speed, this.maxH);
+      }
+    }
+    draw(canvasH) {
+      const bottom = canvasH / devicePixelRatio - 0;
+      const alpha = (this.currentH / this.maxH) * 0.18;
+      ctx.fillStyle = GOLD2 + alpha + ')';
+      ctx.fillRect(this.x, bottom - this.currentH, this.w - 2, this.currentH);
+      // top line
+      ctx.strokeStyle = GOLD2 + (alpha * 3.5) + ')';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(this.x, bottom - this.currentH);
+      ctx.lineTo(this.x + this.w - 2, bottom - this.currentH);
+      ctx.stroke();
+    }
+  }
+
+  // Animated line graph
+  class LineGraph {
+    constructor(points, y0, amplitude) {
+      this.pts = points;
+      this.y0 = y0;
+      this.amp = amplitude;
+      this.progress = 0;
+      this.speed = 0.003;
+    }
+    update() {
+      this.progress = Math.min(this.progress + this.speed, 1);
+    }
+    draw(w, h) {
+      const pts = this.pts;
+      const count = Math.floor(pts.length * this.progress);
+      if (count < 2) return;
+      ctx.beginPath();
+      ctx.moveTo(pts[0].x * w, this.y0 + pts[0].y * this.amp);
+      for (let i = 1; i < count; i++) {
+        ctx.lineTo(pts[i].x * w, this.y0 + pts[i].y * this.amp);
+      }
+      ctx.strokeStyle = GOLD2 + '0.55)';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+
+      // Gradient fill under line
+      const grad = ctx.createLinearGradient(0, this.y0 - this.amp, 0, this.y0 + this.amp * 2);
+      grad.addColorStop(0, GOLD2 + '0.12)');
+      grad.addColorStop(1, GOLD2 + '0)');
+      ctx.lineTo(pts[count - 1].x * w, this.y0 + this.amp * 2);
+      ctx.lineTo(pts[0].x * w, this.y0 + this.amp * 2);
+      ctx.closePath();
+      ctx.fillStyle = grad;
+      ctx.fill();
+    }
+  }
+
+  // Build scene
+  let nodes = [];
+  let bars  = [];
+  let graph;
+
+  function buildScene() {
+    const W = canvas.offsetWidth;
+    const H = canvas.offsetHeight;
+    nodes = [];
+    bars  = [];
+
+    // Grid nodes
+    for (let c = 0; c <= COLS; c++) {
+      for (let r = 0; r <= ROWS; r++) {
+        nodes.push(new Node(
+          (c / COLS) * W,
+          (r / ROWS) * H
+        ));
+      }
+    }
+
+    // Bars along the bottom
+    const barCount = 14;
+    const barW = W / barCount;
+    for (let i = 0; i < barCount; i++) {
+      bars.push(new Bar(
+        i * barW,
+        H * (0.15 + Math.random() * 0.55),
+        barW
+      ));
+    }
+
+    // Line graph — smooth upward trend with noise
+    const ptCount = 60;
+    const pts = [];
+    for (let i = 0; i < ptCount; i++) {
+      const t = i / (ptCount - 1);
+      const trend = -t * 0.8;
+      const noise = (Math.random() - 0.5) * 0.15;
+      pts.push({ x: t, y: trend + noise });
+    }
+    graph = new LineGraph(pts, H * 0.52, H * 0.22);
+  }
+
+  buildScene();
+  window.addEventListener('resize', buildScene);
+
+  let t = 0;
+  function draw() {
+    const W = canvas.offsetWidth;
+    const H = canvas.offsetHeight;
+    ctx.clearRect(0, 0, W, H);
+
+    // Background
+    ctx.fillStyle = INK;
+    ctx.fillRect(0, 0, W, H);
+
+    // Subtle grid
+    ctx.strokeStyle = 'rgba(184,150,90,0.05)';
+    ctx.lineWidth = 1;
+    for (let c = 0; c <= COLS; c++) {
+      const x = (c / COLS) * W;
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let r = 0; r <= ROWS; r++) {
+      const y = (r / ROWS) * H;
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    // Bars
+    bars.forEach(b => { b.update(); b.draw(H * devicePixelRatio); });
+
+    // Line graph
+    graph.update();
+    graph.draw(W, H);
+
+    // Nodes
+    nodes.forEach(n => n.draw(t));
+
+    // Diagonal accent line
+    ctx.strokeStyle = GOLD2 + '0.12)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 8]);
+    ctx.beginPath();
+    ctx.moveTo(0, H * 0.3);
+    ctx.lineTo(W, H * 0.7);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Corner mark
+    ctx.strokeStyle = GOLD2 + '0.35)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(W - 40, 30); ctx.lineTo(W - 30, 30); ctx.lineTo(W - 30, 40);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(30, H - 40); ctx.lineTo(30, H - 30); ctx.lineTo(40, H - 30);
+    ctx.stroke();
+
+    t += 0.016;
+    requestAnimationFrame(draw);
+  }
+  draw();
+</script>
+</body>
+</html>
