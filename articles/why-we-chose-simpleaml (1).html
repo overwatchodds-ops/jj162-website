@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why We Chose SimpleAML for AML Compliance | JJ162 Chartered Accountants</title>
+<meta name="description" content="JJ162 Chartered Accountants reviews SimpleAML.com.au — and why it beat Nelvo, EasyAML, Shufti Pro and TrustEasy for small accounting firms needing AML/CTF compliance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1117;
+    --paper: #f5f2ec;
+    --gold: #b8965a;
+    --gold-light: #d4b07a;
+    --cream: #ede8df;
+    --mid: #6b6459;
+    --rule: rgba(184,150,90,0.25);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 3.5rem;
+    background: rgba(245,242,236,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 0.9rem;
+    text-decoration: none; color: inherit;
+  }
+  .nav-logo {
+    width: 36px; height: 36px;
+    background: var(--ink);
+    border-radius: 4px;
+    display: grid; place-items: center;
+  }
+  .nav-logo span {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nav-wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .nav-back {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 0.5rem;
+    transition: color .2s;
+  }
+  .nav-back:hover { color: var(--gold); }
+
+  /* ─── ARTICLE HERO ─── */
+  .article-hero {
+    padding: 9rem 3.5rem 4rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .article-category {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    display: flex; align-items: center; gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .article-category::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 1px;
+    background: var(--gold);
+  }
+  .article-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 1.8rem;
+    letter-spacing: -0.01em;
+  }
+  .article-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .article-meta {
+    display: flex; align-items: center; gap: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 3rem;
+  }
+  .meta-author {
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .meta-avatar {
+    width: 40px; height: 40px;
+    background: var(--ink);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .meta-author-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .meta-author-title {
+    font-size: 0.75rem;
+    color: var(--mid);
+    margin-top: 0.15rem;
+  }
+  .meta-divider {
+    width: 1px; height: 32px;
+    background: var(--rule);
+  }
+  .meta-date {
+    font-size: 0.75rem;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+  }
+  .meta-read {
+    font-size: 0.75rem;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+  }
+
+  /* ─── ARTICLE BODY ─── */
+  .article-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 3.5rem 6rem;
+  }
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #2a2720;
+    margin-bottom: 1.6rem;
+  }
+  .article-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 3rem 0 1.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .article-body h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 2.2rem 0 0.8rem;
+    font-style: italic;
+  }
+  .article-body strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .article-body a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(184,150,90,0.35);
+    transition: border-color .2s;
+  }
+  .article-body a:hover { border-color: var(--gold); }
+
+  /* Pull quote */
+  .pull-quote {
+    margin: 2.5rem 0;
+    padding: 2rem 2.5rem;
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+  }
+  .pull-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem !important;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink) !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  /* Comparison table */
+  .comparison-wrap {
+    margin: 2.5rem 0;
+    overflow-x: auto;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .comparison-table th {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .comparison-table th:first-child { border-radius: 0; }
+  .comparison-table td {
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid var(--rule);
+    color: var(--mid);
+    line-height: 1.5;
+  }
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .comparison-table tr:nth-child(even) td { background: var(--cream); }
+  .comparison-table .highlight-row td {
+    background: rgba(184,150,90,0.08);
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .comparison-table .highlight-row td:first-child {
+    color: var(--gold);
+    font-weight: 500;
+  }
+  .badge-free {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+  }
+  .badge-expensive {
+    display: inline-block;
+    background: rgba(180,50,50,0.1);
+    color: #b43232;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+  }
+
+  /* CTA box */
+  .article-cta {
+    margin: 3rem 0;
+    padding: 2.5rem 3rem;
+    background: var(--ink);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .article-cta-text h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--paper);
+    margin-bottom: 0.4rem;
+  }
+  .article-cta-text p {
+    font-size: 0.88rem !important;
+    color: rgba(245,242,236,0.5) !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+  }
+  .article-cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink) !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    padding: 1rem 2.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .2s, transform .1s;
+  }
+  .article-cta-btn:hover {
+    background: var(--gold-light) !important;
+    border-bottom: none !important;
+    transform: translateY(-1px);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    padding: 2.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.4);
+  }
+  .footer-link {
+    font-size: 0.78rem;
+    color: rgba(245,242,236,0.3);
+    text-decoration: none;
+  }
+  .footer-link:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .article-hero { padding: 7rem 1.5rem 3rem; }
+    .article-body { padding: 0 1.5rem 4rem; }
+    .article-meta { flex-wrap: wrap; gap: 1rem; }
+    .article-cta { padding: 2rem; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-logo"><span>JJ</span></div>
+    <span class="nav-wordmark">JJ162 Chartered Accountants</span>
+  </a>
+  <a class="nav-back" href="/articles.html">← All Articles</a>
+</nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <p class="article-category">AML Compliance · Practice Management</p>
+  <h1 class="article-title">
+    We Tested Every AML Tool We Could Find.<br>
+    <em>Here's Why We Chose SimpleAML.</em>
+  </h1>
+  <div class="article-meta">
+    <div class="meta-author">
+      <div class="meta-avatar">J</div>
+      <div>
+        <div class="meta-author-name">Johnny — JJ162 Chartered Accountants</div>
+        <div class="meta-author-title">Principal, CA · Sydney NSW</div>
+      </div>
+    </div>
+    <div class="meta-divider"></div>
+    <span class="meta-date">March 2026</span>
+    <div class="meta-divider"></div>
+    <span class="meta-read">5 min read</span>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-body">
+
+  <p>
+    Like most small accounting firms in Australia, when the AML/CTF legislation changes landed 
+    in late 2024, my first reaction was something between mild panic and resigned frustration. 
+    Not because I disagreed with the intent of the law — combating money laundering matters — 
+    but because the compliance burden being placed on sole practitioners and small firms like 
+    ours felt wildly disproportionate to our actual risk profile.
+  </p>
+
+  <p>
+    We are a small chartered accounting practice in Sydney. We do tax, bookkeeping, business 
+    advisory, and compliance work for small businesses, healthcare professionals, and 
+    not-for-profits. We are not a major financial institution. We are not a remittance provider. 
+    We are two people who genuinely care about doing right by our clients.
+  </p>
+
+  <p>
+    But the law is the law. <strong>By 31 March 2026 we needed to be registered with AUSTRAC. 
+    By 1 July 2026 we needed a fully operational AML/CTF program.</strong> So I did what I always 
+    do — I researched everything I could find.
+  </p>
+
+  <div class="pull-quote">
+    <p>"The compliance burden placed on sole practitioners felt wildly disproportionate — until I found a tool actually built for firms like ours."</p>
+  </div>
+
+  <h2>What We Looked At</h2>
+
+  <p>
+    I spent several weeks evaluating every AML compliance platform I could get my hands on. 
+    Here is an honest summary of what I found.
+  </p>
+
+  <h3>Nelvo</h3>
+  <p>
+    Nelvo is a capable platform, no question. It offers solid identity verification and 
+    customer due diligence workflows. But it is built for compliance teams in mid-to-large 
+    financial services firms. The pricing reflects that. When I got to the end of their 
+    onboarding process and saw what it would cost a sole practitioner or two-person firm 
+    annually, I closed the tab. It simply was not built for us.
+  </p>
+
+  <h3>EasyAML</h3>
+  <p>
+    The name promises simplicity — and to be fair, the interface is cleaner than some 
+    alternatives. But again, the pricing structure is designed around volume and enterprise 
+    use. For a small firm running perhaps 50–100 client due diligence checks a year, you 
+    are paying for infrastructure you will never use. The per-check costs add up fast.
+  </p>
+
+  <h3>Shufti Pro</h3>
+  <p>
+    Shufti Pro is impressive technology — AI-driven identity verification, biometric checks, 
+    global document coverage. It is genuinely excellent at what it does. It is also a global 
+    platform built for fintechs, banks, and exchanges operating at serious scale. For a 
+    small Australian accounting practice trying to meet its AUSTRAC obligations, it is 
+    dramatically over-engineered and priced accordingly.
+  </p>
+
+  <h3>TrustEasy</h3>
+  <p>
+    TrustEasy had some promising features and is at least oriented toward the professional 
+    services sector. But when we compared the total annual cost against what we would actually 
+    use, it still came in well above what a small firm can reasonably absorb — particularly 
+    when you are already absorbing the cost of the compliance work itself.
+  </p>
+
+  <h2>The Honest Problem With All of Them</h2>
+
+  <p>
+    Across every platform I evaluated, the same pattern emerged. These tools were built for 
+    organisations with dedicated compliance officers, compliance budgets, and compliance teams. 
+    They were adapted — sometimes thoughtfully, sometimes not — for the professional services 
+    sector. But none of them were built <em>from the ground up</em> for the reality of a small 
+    Australian accounting or bookkeeping practice.
+  </p>
+
+  <p>
+    That reality looks like this: one or two practitioners, a client base of mostly small 
+    businesses and individuals, a limited budget, and absolutely no desire to spend half 
+    a day a week on compliance administration. We need something that works, costs very little, 
+    and does not require a compliance degree to operate.
+  </p>
+
+  <div class="comparison-wrap">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Built For Small Firms?</th>
+          <th>Pricing</th>
+          <th>Australian AML/CTF Focus?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Nelvo</strong></td>
+          <td>No — enterprise focused</td>
+          <td><span class="badge-expensive">Expensive</span></td>
+          <td>Partial</td>
+        </tr>
+        <tr>
+          <td><strong>EasyAML</strong></td>
+          <td>Partially</td>
+          <td><span class="badge-expensive">Expensive</span></td>
+          <td>Partial</td>
+        </tr>
+        <tr>
+          <td><strong>Shufti Pro</strong></td>
+          <td>No — fintech/banking scale</td>
+          <td><span class="badge-expensive">Expensive</span></td>
+          <td>Global, not AU-specific</td>
+        </tr>
+        <tr>
+          <td><strong>TrustEasy</strong></td>
+          <td>Partially</td>
+          <td><span class="badge-expensive">Expensive</span></td>
+          <td>Partial</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>SimpleAML</strong></td>
+          <td>Yes — built specifically for accountants & bookkeepers</td>
+          <td><span class="badge-free">Free for small firms</span></td>
+          <td>Yes — Australian AML/CTF Act compliant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Then I Found SimpleAML</h2>
+
+  <p>
+    <a href="https://www.simpleaml.com.au" target="_blank">SimpleAML.com.au</a> was built 
+    by Australians, for Australian accounting and bookkeeping practices. It is purpose-designed 
+    around the specific obligations that now apply to our profession under the amended 
+    AML/CTF Act — not adapted from a banking compliance platform, not translated from 
+    a foreign jurisdiction. Built here, for us.
+  </p>
+
+  <p>
+    And for small firms — sole practitioners and practices of our size — <strong>it is free</strong>.
+  </p>
+
+  <p>
+    I want to let that land for a moment, because when I first saw it I assumed there was a 
+    catch. There was not. SimpleAML has made a deliberate decision to support small 
+    Australian accounting and bookkeeping practices as they navigate these new obligations — 
+    recognising that the compliance burden on small firms is already significant, and that 
+    pricing these firms out of proper compliance software helps no one.
+  </p>
+
+  <h2>What SimpleAML Actually Does For Us</h2>
+
+  <p>
+    In practice, SimpleAML handles the things that would otherwise consume hours of manual 
+    work each week:
+  </p>
+
+  <p>
+    <strong>Client onboarding and identity verification</strong> — structured, guided, 
+    and documented in a format that satisfies AUSTRAC's requirements. Every new client 
+    goes through a proper due diligence process and everything is recorded automatically.
+  </p>
+
+  <p>
+    <strong>Risk assessment</strong> — the platform helps us assess each client's risk 
+    profile and flag those requiring enhanced due diligence. No more trying to remember 
+    which clients need extra scrutiny and why.
+  </p>
+
+  <p>
+    <strong>Ongoing monitoring reminders</strong> — one of the most easily overlooked 
+    obligations. SimpleAML makes sure we are reviewing client relationships on the schedule 
+    the law requires.
+  </p>
+
+  <p>
+    <strong>Our AML/CTF Program</strong> — rather than starting from a blank page or 
+    paying a consultant thousands of dollars to write one, SimpleAML guides us through 
+    creating a program tailored to our specific practice.
+  </p>
+
+  <p>
+    <strong>An audit trail we can actually rely on</strong> — if AUSTRAC ever reviews 
+    our compliance, everything we have done is documented, timestamped, and retrievable. 
+    That peace of mind alone is worth an enormous amount.
+  </p>
+
+  <div class="pull-quote">
+    <p>"For sole practitioners and small firms, it is free. When I first saw it, I assumed there was a catch. There was not."</p>
+  </div>
+
+  <h2>My Honest Recommendation</h2>
+
+  <p>
+    I am not affiliated with SimpleAML. I am not being paid to write this. I am a small 
+    accounting practice principal who spent weeks evaluating every option available, 
+    and this is the conclusion I came to on behalf of my own practice.
+  </p>
+
+  <p>
+    If you are a sole practitioner or small accounting or bookkeeping firm in Australia 
+    grappling with your AML/CTF obligations — and you should be, because the deadlines 
+    are real and the penalties are serious — then SimpleAML is where I would start. 
+    It is the only platform I found that was genuinely built for our situation, at a 
+    price point that makes sense for a small firm.
+  </p>
+
+  <p>
+    The compliance obligation is not going away. But it does not have to be as painful 
+    or as expensive as the other options would have you believe.
+  </p>
+
+  <a href="https://www.simpleaml.com.au" target="_blank" style="display:inline-block; margin-bottom: 0.5rem;">
+    Visit SimpleAML.com.au
+  </a> — and see for yourself.
+
+  <div class="article-cta">
+    <div class="article-cta-text">
+      <h4>Need help with your AML/CTF obligations?</h4>
+      <p>JJ162 Chartered Accountants helps small businesses and professionals navigate compliance. Get in touch for a no-obligation conversation.</p>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Contact JJ162</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-brand">JJ162 Chartered Accountants</span>
+  <a href="/" class="footer-link">← Back to Home</a>
+</footer>
+
+</body>
+</html>
