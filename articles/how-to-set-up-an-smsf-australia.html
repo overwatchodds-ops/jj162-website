@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CJ4PGT2SL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5CJ4PGT2SL');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Set Up an SMSF in Australia (2026 Guide) | JJ162 Chartered Accountants</title>
+<meta name="description" content="A step-by-step guide to setting up a self-managed super fund (SMSF) in Australia — covering trust deeds, ATO registration, investment strategy, and ongoing obligations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink:        #0f1117;
+  --paper:      #f5f2ec;
+  --gold:       #b8965a;
+  --gold-light: #d4b07a;
+  --cream:      #ede8df;
+  --muted:      #6b7280;
+  --line:       rgba(184,150,90,.2);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 48px;
+  background:rgba(245,242,236,0.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo-mark{
+  width:36px;height:36px;background:var(--ink);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:var(--gold);font-family:'DM Mono',monospace;
+  letter-spacing:.04em;
+}
+.nav-wordmark{
+  font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;
+  color:var(--ink);letter-spacing:.02em;
+}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{font-size:13px;color:var(--ink);text-decoration:none;opacity:.7;transition:opacity .2s;}
+.nav-links a:hover{opacity:1;color:var(--gold);}
+.nav-cta{
+  background:var(--ink);color:var(--paper) !important;opacity:1 !important;
+  padding:8px 20px;border-radius:4px;font-size:13px;font-weight:500;
+}
+.nav-cta:hover{background:var(--gold) !important;color:var(--ink) !important;}
+
+.article-hero{
+  padding:8rem 48px 3rem;
+  max-width:780px;margin:0 auto;
+}
+.article-tag{
+  font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:1.2rem;
+}
+.article-tag::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);}
+.article-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,5vw,3.4rem);
+  font-weight:400;line-height:1.1;
+  color:var(--ink);letter-spacing:-.02em;margin-bottom:1rem;
+}
+.article-title em{font-style:italic;color:var(--gold);}
+.article-sub{
+  font-size:17px;color:var(--muted);line-height:1.7;
+  margin-bottom:1.5rem;font-weight:300;
+}
+.article-meta{
+  display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;
+  font-size:11px;font-family:'DM Mono',monospace;color:var(--muted);
+  padding-top:1.2rem;border-top:1px solid var(--line);
+}
+.article-meta strong{color:var(--ink);}
+
+.article-body{
+  max-width:780px;margin:0 auto;padding:2.5rem 48px 5rem;
+}
+.article-body h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:400;color:var(--ink);
+  margin:2.5rem 0 1rem;line-height:1.2;
+}
+.article-body h3{
+  font-size:15px;font-weight:600;color:var(--ink);
+  margin:2rem 0 .7rem;
+}
+.article-body p{
+  font-size:16px;line-height:1.8;color:#2d3748;
+  margin-bottom:1.2rem;
+}
+.article-body ul, .article-body ol{
+  margin:1rem 0 1.4rem 1.5rem;
+}
+.article-body li{
+  font-size:16px;line-height:1.8;color:#2d3748;margin-bottom:.4rem;
+}
+.article-body strong{color:var(--ink);font-weight:600;}
+.article-body a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,150,90,.3);}
+.article-body a:hover{border-color:var(--gold);}
+
+.callout{
+  background:var(--cream);border-left:3px solid var(--gold);
+  border-radius:0 8px 8px 0;padding:1.2rem 1.5rem;margin:2rem 0;
+}
+.callout p{margin:0;font-size:15px;color:var(--ink);}
+.callout strong{color:var(--gold);}
+
+.info-box{
+  background:#fff;border:1px solid var(--line);border-radius:8px;
+  padding:1.5rem;margin:2rem 0;
+}
+.info-box h4{
+  font-family:'Cormorant Garamond',serif;font-size:1.1rem;
+  color:var(--ink);margin-bottom:.8rem;
+}
+.info-box p{font-size:14px;margin:0;color:var(--muted);}
+
+.divider{
+  border:none;border-top:1px solid var(--line);
+  margin:2.5rem 0;
+}
+
+.cta-box{
+  background:var(--ink);border-radius:10px;
+  padding:2.5rem;margin:3rem 0 0;
+  text-align:center;
+}
+.cta-box h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:400;color:#f5f2ec;
+  margin-bottom:.6rem;
+}
+.cta-box p{font-size:14px;color:rgba(245,242,236,.6);margin-bottom:1.5rem;}
+.cta-box a{
+  display:inline-block;background:var(--gold);color:var(--ink);
+  padding:12px 32px;border-radius:4px;font-size:14px;font-weight:600;
+  text-decoration:none;border:none;transition:background .2s;
+}
+.cta-box a:hover{background:var(--gold-light);border:none;}
+
+footer{
+  border-top:1px solid var(--line);padding:2rem 3rem;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);}
+.footer-links{display:flex;gap:24px;}
+.footer-links a{font-size:12px;color:var(--muted);text-decoration:none;}
+.footer-links a:hover{color:var(--gold);}
+.footer-legal{font-size:11px;color:var(--muted);}
+
+@media(max-width:700px){
+  nav{padding:16px 20px;}
+  .nav-links{display:none;}
+  .article-hero,.article-body{padding-left:20px;padding-right:20px;}
+  footer{padding:24px 20px;flex-direction:column;}
+}
+</style>
+
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">
+    <div class="nav-logo-mark">JJ</div>
+    <span class="nav-wordmark">JJ162 Chartered Accountants</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#why">Why Us</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#clients">Who We Help</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/articles.html">Articles</a></li>
+    <li><a href="/#contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<div class="article-hero">
+  <p class="article-tag">Superannuation · SMSF</p>
+  <h1 class="article-title">How to Set Up an SMSF in Australia: <em>A Step-by-Step Guide</em></h1>
+  <p class="article-sub">Taking control of your retirement savings through an SMSF requires careful setup and ongoing compliance. Here's exactly what's involved.</p>
+  <div class="article-meta">
+    <span><strong>JJ162 Chartered Accountants</strong></span>
+    <span>9 min read · 2026</span>
+    <span>Sydney, NSW</span>
+  </div>
+</div>
+
+<div class="article-body">
+
+<p>A self-managed super fund (SMSF) gives you direct control over how your retirement savings are invested. But setting one up correctly — and running it compliantly — requires careful planning. This guide walks through the key steps, costs, and considerations for Australians thinking about establishing an SMSF in 2026.</p>
+
+<div class="callout">
+  <p><strong>Is an SMSF right for you?</strong> An SMSF generally makes financial sense once you have at least $200,000 in superannuation. Below this, the fixed costs of running an SMSF often outweigh the benefits compared to industry or retail funds.</p>
+</div>
+
+<h2>Step 1: Decide on your structure</h2>
+<p>An SMSF can have between one and six members (the 2021 rule change increased the maximum from four). All members must be trustees, or if the fund uses a corporate trustee, all members must be directors of that corporate trustee.</p>
+
+<p>We almost always recommend using a <strong>corporate trustee</strong> — a proprietary company set up specifically to act as trustee of the fund. This costs a little more to set up but provides better asset protection, makes it easier to add or remove members, and reduces administrative complexity when a member dies.</p>
+
+<h2>Step 2: Establish the trust deed</h2>
+<p>The SMSF trust deed is the legal document that governs how the fund operates. It must comply with the <em>Superannuation Industry (Supervision) Act 1993</em> (SIS Act) and must be prepared by a legal practitioner. A good trust deed is flexible enough to allow for the investment strategies and pension structures you might want to use in future.</p>
+
+<h2>Step 3: Register with the ATO</h2>
+<p>Once the trust is established, you must register the SMSF with the Australian Taxation Office within 60 days. This involves applying for an ABN and TFN for the fund, and electing to be regulated under the SIS Act. Regulated status is required for the fund to receive concessional tax treatment.</p>
+
+<h2>Step 4: Open a bank account</h2>
+<p>The SMSF must have its own bank account, separate from members' personal accounts. All contributions, rollovers, investment income, and expenses flow through this account. The account must be in the fund's name, not the members' personal names.</p>
+
+<h2>Step 5: Create an investment strategy</h2>
+<p>The SIS Act requires every SMSF to have a written investment strategy that considers the risk and return objectives of the fund, the liquidity needs of the fund, and the diversification of investments. The strategy must be reviewed regularly and updated when circumstances change.</p>
+
+<h3>The investment strategy must consider:</h3>
+<ul>
+  <li>The likely return from investments relative to the fund's objectives</li>
+  <li>The risk of those investments</li>
+  <li>The liquidity of investments (particularly if members are approaching retirement)</li>
+  <li>The ability of the fund to pay benefits as members retire</li>
+  <li>Whether the trustees should hold insurance for each member</li>
+</ul>
+
+<h2>Step 6: Roll over existing super</h2>
+<p>Once the fund is established and the bank account is open, you can roll over your existing superannuation from industry or retail funds into your SMSF. This triggers a rollover release authority process. It typically takes two to four weeks, depending on the releasing fund.</p>
+
+<h2>Ongoing obligations</h2>
+<p>Running an SMSF comes with significant ongoing responsibilities. These include:</p>
+<ul>
+  <li><strong>Annual audit</strong> — Every SMSF must be audited each year by an approved SMSF auditor</li>
+  <li><strong>Annual tax return</strong> — The fund must lodge an SMSF annual return with the ATO each year</li>
+  <li><strong>Investment strategy review</strong> — The investment strategy must be reviewed at least annually</li>
+  <li><strong>Contribution rules</strong> — Concessional contributions are capped at $30,000 per year (2025/26); non-concessional at $120,000</li>
+  <li><strong>Sole purpose test</strong> — The fund must be maintained solely for the purpose of providing retirement benefits</li>
+</ul>
+
+<div class="callout">
+  <p><strong>ATO scrutiny:</strong> SMSFs are regulated closely by the Australian Taxation Office. Common compliance failures include loans to members (strictly prohibited), using fund assets for personal benefit, and failing to maintain proper records. Non-compliance can result in the fund being made non-complying — resulting in a 45% tax rate on the fund's assets.</p>
+</div>
+
+<h2>What does it cost to set up an SMSF?</h2>
+<p>Setup costs typically include: legal fees for the trust deed ($500–$1,500), ASIC fees for incorporating a corporate trustee (around $590), and accounting fees for ATO registration and initial setup ($500–$1,500). Ongoing annual costs for accounting, audit, tax return, and administration typically range from $2,500 to $5,000 per year depending on complexity.</p>
+
+<h2>Do I need an accountant for my SMSF?</h2>
+<p>Yes — while you can technically manage some aspects yourself, the annual audit is a legal requirement and must be performed by a registered SMSF auditor. The annual tax return is complex. And the compliance requirements of the SIS Act mean that professional advice is essential to avoid costly mistakes.</p>
+
+<hr class="divider">
+
+<p>JJ162 Chartered Accountants helps clients establish and administer SMSFs in Sydney and across NSW. We handle the setup, annual accounting, tax returns, and coordinate your audit — so you can focus on managing your investments.</p>
+
+<div class="cta-box">
+  <h3>Thinking about setting up an SMSF?</h3>
+  <p>We guide clients through every step of SMSF establishment and ongoing compliance. Get in touch for an initial consultation.</p>
+  <a href="mailto:johnny@jj162.com.au">Contact JJ162 →</a>
+</div>
+
+</div>
+
+<footer>
+  <span class="footer-brand">JJ162 Chartered Accountants</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/articles.html">Articles</a>
+    <a href="mailto:johnny@jj162.com.au">johnny@jj162.com.au</a>
+  </div>
+  <span class="footer-legal">© 2026 JJ162 Pty Ltd · ABN 86 665 869 670</span>
+</footer>
+</body>
+</html>
