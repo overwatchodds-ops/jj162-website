@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CJ4PGT2SL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5CJ4PGT2SL');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles & Guides | JJ162 Chartered Accountants</title>
+<meta name="description" content="Practical guides from JJ162 Chartered Accountants — forensic accounting for will disputes and divorce, SMSF setup and property rules, testamentary trusts, and executor obligations in NSW.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:        #0f1117;
+  --paper:      #f5f2ec;
+  --gold:       #b8965a;
+  --gold-light: #d4b07a;
+  --cream:      #ede8df;
+  --muted:      #6b7280;
+  --line:       rgba(184,150,90,.2);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 48px;
+  background:rgba(245,242,236,0.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo-mark{
+  width:36px;height:36px;background:var(--ink);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:var(--gold);font-family:'DM Mono',monospace;
+  letter-spacing:.04em;
+}
+.nav-wordmark{
+  font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;
+  color:var(--ink);letter-spacing:.02em;
+}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{font-size:13px;color:var(--ink);text-decoration:none;opacity:.7;transition:opacity .2s;}
+.nav-links a:hover{opacity:1;color:var(--gold);}
+.nav-links a.active{opacity:1;color:var(--gold);}
+.nav-cta{
+  background:var(--ink);color:var(--paper) !important;opacity:1 !important;
+  padding:8px 20px;border-radius:4px;font-size:13px;font-weight:500;
+}
+.nav-cta:hover{background:var(--gold) !important;color:var(--ink) !important;}
+
+.page-hero{
+  padding:9rem 48px 4rem;
+  max-width:1100px;margin:0 auto;
+  border-bottom:1px solid var(--line);
+  margin-bottom:4rem;
+}
+.page-tag{
+  font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:1.2rem;
+}
+.page-tag::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold);}
+.page-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4rem);
+  font-weight:400;line-height:1.05;
+  color:var(--ink);letter-spacing:-.02em;margin-bottom:1rem;
+}
+.page-title em{font-style:italic;color:var(--gold);}
+.page-sub{font-size:16px;color:var(--muted);line-height:1.7;max-width:560px;}
+
+.articles-section{max-width:1100px;margin:0 auto;padding:0 48px 6rem;}
+
+/* Category labels */
+.category-label{
+  font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);margin:3rem 0 1.2rem;
+  display:flex;align-items:center;gap:12px;
+}
+.category-label::after{content:'';flex:1;height:1px;background:var(--line);}
+
+/* Featured */
+.article-featured{
+  display:grid;grid-template-columns:1fr 1fr;
+  background:var(--ink);border-radius:10px;overflow:hidden;
+  text-decoration:none;margin-bottom:1.5rem;
+  transition:transform .2s;
+}
+.article-featured:hover{transform:translateY(-2px);}
+.article-featured-visual{
+  background:linear-gradient(135deg,rgba(184,150,90,.2) 0%,rgba(15,17,23,.9) 100%);
+  display:flex;align-items:center;justify-content:center;
+  min-height:240px;position:relative;overflow:hidden;
+  border-right:1px solid rgba(184,150,90,.15);
+}
+.article-featured-visual::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(184,150,90,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(184,150,90,.05) 1px,transparent 1px);
+  background-size:40px 40px;
+}
+.featured-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:7rem;font-weight:400;
+  color:rgba(184,150,90,.15);
+  position:relative;z-index:1;line-height:1;user-select:none;
+}
+.article-featured-body{padding:2.2rem;}
+.featured-tag{font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;}
+.featured-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.65rem;font-weight:400;color:#f5f2ec;
+  line-height:1.2;margin-bottom:.7rem;letter-spacing:-.01em;
+}
+.featured-desc{font-size:13px;color:rgba(245,242,236,.6);line-height:1.7;margin-bottom:1.3rem;}
+.featured-meta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+.featured-read{font-size:11px;color:rgba(245,242,236,.4);font-family:'DM Mono',monospace;}
+.featured-cta{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.06em;}
+
+/* Grid */
+.articles-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem;}
+.article-card{
+  background:#fff;border:1px solid var(--line);border-radius:8px;
+  padding:1.8rem;text-decoration:none;display:flex;flex-direction:column;
+  transition:border-color .2s, transform .2s;position:relative;overflow:hidden;
+}
+.article-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--gold);opacity:0;transition:opacity .2s;
+}
+.article-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+.article-card:hover::before{opacity:1;}
+.card-num{font-family:'DM Mono',monospace;font-size:10px;color:rgba(184,150,90,.5);margin-bottom:.7rem;}
+.card-tag{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+.card-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:400;color:var(--ink);
+  line-height:1.25;margin-bottom:.6rem;
+}
+.card-desc{font-size:13px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:1.1rem;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;}
+.card-read{font-size:11px;color:var(--muted);font-family:'DM Mono',monospace;}
+.card-arrow{font-size:13px;color:var(--gold);font-weight:600;}
+
+/* CTA */
+.cta-banner{
+  background:var(--ink);border-radius:10px;
+  padding:2.5rem 3rem;margin-top:3rem;
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+}
+.cta-banner h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:#f5f2ec;margin-bottom:.4rem;}
+.cta-banner p{font-size:14px;color:rgba(245,242,236,.6);}
+.btn-gold{
+  background:var(--gold);color:var(--ink);
+  padding:12px 28px;border-radius:4px;
+  font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;
+  transition:background .2s;
+}
+.btn-gold:hover{background:var(--gold-light);}
+
+footer{
+  border-top:1px solid var(--line);padding:2rem 3rem;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);}
+.footer-links{display:flex;gap:24px;}
+.footer-links a{font-size:12px;color:var(--muted);text-decoration:none;}
+.footer-links a:hover{color:var(--gold);}
+.footer-legal{font-size:11px;color:var(--muted);}
+
+@media(max-width:700px){
+  nav{padding:16px 20px;}
+  .nav-links{display:none;}
+  .page-hero,.articles-section{padding-left:20px;padding-right:20px;}
+  .article-featured{grid-template-columns:1fr;}
+  .article-featured-visual{min-height:100px;border-right:none;border-bottom:1px solid rgba(184,150,90,.15);}
+  .article-featured-body{padding:1.5rem;}
+  .articles-grid{grid-template-columns:1fr;}
+  .cta-banner{padding:1.5rem;flex-direction:column;}
+  footer{padding:24px 20px;flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <div class="nav-logo-mark">JJ</div>
+    <span class="nav-wordmark">JJ162 Chartered Accountants</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#why">Why Us</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#clients">Who We Help</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/articles.html" class="active">Articles</a></li>
+    <li><a href="/#contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <p class="page-tag">Articles & Guides</p>
+  <h1 class="page-title">Practical insights for<br><em>Australian small business</em></h1>
+  <p class="page-sub">Plain-English guides on forensic accounting, superannuation, estate planning, and compliance — written for the business owners, executors, and families we work with.</p>
+</div>
+
+<div class="articles-section">
+
+  <!-- ── FORENSIC ACCOUNTING ── -->
+  <div class="category-label">Forensic Accounting</div>
+
+  <a class="article-featured" href="/articles/forensic-accounting-will-disputes.html">
+    <div class="article-featured-visual">
+      <div class="featured-num">01</div>
+    </div>
+    <div class="article-featured-body">
+      <div class="featured-tag">Forensic Accounting · Estate Disputes</div>
+      <div class="featured-title">What Does a Forensic Accountant Do in a Will Dispute?</div>
+      <div class="featured-desc">When an estate doesn't add up — missing assets, suspicious transfers, executor misconduct — a forensic accountant uncovers the financial truth and prepares the evidence for court.</div>
+      <div class="featured-meta">
+        <span class="featured-read">7 min read · 2026</span>
+        <span class="featured-cta">Read guide →</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="articles-grid">
+    <a class="article-card" href="/articles/forensic-accounting-divorce-shadow-accountant.html">
+      <div class="card-num">02</div>
+      <div class="card-tag">Forensic Accounting · Family Law</div>
+      <div class="card-title">Forensic Accounting in Divorce: The Role of a Shadow Accountant</div>
+      <div class="card-desc">Suspect your spouse is hiding income or assets in a divorce? A shadow accountant analyses the financial position independently and helps your lawyer build the case.</div>
+      <div class="card-footer">
+        <span class="card-read">8 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="article-card" href="/articles/executor-of-estate-financial-guide-australia.html">
+      <div class="card-num">03</div>
+      <div class="card-tag">Estate Administration · Tax</div>
+      <div class="card-title">Appointed Executor of an Estate? A Financial Guide for NSW Executors</div>
+      <div class="card-desc">Executors are personally liable for the estate's tax obligations. This guide covers what to do first, the tax returns required, CGT, superannuation, and how to protect yourself.</div>
+      <div class="card-footer">
+        <span class="card-read">8 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ── SMSF ── -->
+  <div class="category-label">Self-Managed Super</div>
+
+  <a class="article-featured" href="/articles/how-to-set-up-an-smsf-australia.html">
+    <div class="article-featured-visual">
+      <div class="featured-num">04</div>
+    </div>
+    <div class="article-featured-body">
+      <div class="featured-tag">Superannuation · SMSF</div>
+      <div class="featured-title">How to Set Up an SMSF in Australia: A Step-by-Step Guide (2026)</div>
+      <div class="featured-desc">From trust deed to ATO registration to investment strategy — everything you need to know to establish a self-managed super fund correctly in 2026.</div>
+      <div class="featured-meta">
+        <span class="featured-read">9 min read · 2026</span>
+        <span class="featured-cta">Read guide →</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="articles-grid">
+    <a class="article-card" href="/articles/smsf-property-investment-rules-australia.html">
+      <div class="card-num">05</div>
+      <div class="card-tag">Superannuation · Property · SMSF</div>
+      <div class="card-title">SMSF Property Investment: What the Rules Actually Say</div>
+      <div class="card-desc">Residential vs commercial, LRBAs, related party leases — the rules around SMSF property are strict and the ATO watches closely. Here's what's allowed and what's not.</div>
+      <div class="card-footer">
+        <span class="card-read">8 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="article-card" href="/articles/what-is-a-testamentary-trust.html">
+      <div class="card-num">06</div>
+      <div class="card-tag">Estate Planning · Tax</div>
+      <div class="card-title">What is a Testamentary Trust — and Do You Need One?</div>
+      <div class="card-desc">One of Australia's most powerful estate planning tools lets minor children receive income at adult tax rates. Most people have never heard of it. Here's how it works.</div>
+      <div class="card-footer">
+        <span class="card-read">7 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ── EARLIER ARTICLES ── -->
+  <div class="category-label">Superannuation & Compliance</div>
+
+  <div class="articles-grid">
+    <a class="article-card" href="/articles/superannuation-clearing-house-comparison.html">
+      <div class="card-num">07</div>
+      <div class="card-tag">Superannuation · Payroll</div>
+      <div class="card-title">Comparing Superannuation Clearing Houses in Australia</div>
+      <div class="card-desc">SuperChoice, QuickSuper, SACH — which clearing house is right for your business? We compare the main options on cost, features, and ease of use.</div>
+      <div class="card-footer">
+        <span class="card-read">6 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a class="article-card" href="/articles/why-we-chose-simpleaml.html">
+      <div class="card-num">08</div>
+      <div class="card-tag">AML/CTF · Compliance</div>
+      <div class="card-title">Why We Chose SimpleAML for Our AML/CTF Compliance</div>
+      <div class="card-desc">From 1 July 2026, Australian accounting firms must comply with AML/CTF obligations. Here's how we approached the challenge and what we built.</div>
+      <div class="card-footer">
+        <span class="card-read">5 min read</span>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="cta-banner">
+    <div>
+      <h3>Need advice for your business?</h3>
+      <p>Talk to our team about forensic accounting, SMSF, estate planning, or any accounting question.</p>
+    </div>
+    <a href="mailto:johnny@jj162.com.au" class="btn-gold">Get in Touch →</a>
+  </div>
+
+</div>
+
+<footer>
+  <span class="footer-brand">JJ162 Chartered Accountants</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/articles.html">Articles</a>
+    <a href="mailto:johnny@jj162.com.au">johnny@jj162.com.au</a>
+  </div>
+  <span class="footer-legal">© 2026 JJ162 Pty Ltd · ABN 86 665 869 670</span>
+</footer>
+
+</body>
+</html>
