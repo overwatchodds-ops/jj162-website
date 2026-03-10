@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ── ENGLISH PAGES ── -->
+  <url>
+    <loc>https://jj162.com.au/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj162.com.au/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://jj162.com.au/zh/"/>
+    <lastmod>2026-03-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj162.com.au/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://jj162.com.au/zh/articles.html"/>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/forensic-accounting-will-disputes.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/forensic-accounting-divorce-shadow-accountant.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/executor-of-estate-financial-guide-australia.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/how-to-set-up-an-smsf-australia.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/smsf-property-investment-rules-australia.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/what-is-a-testamentary-trust.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/superannuation-clearing-house-comparison.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/articles/why-we-chose-simpleaml.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ── CHINESE PAGES ── -->
+  <url>
+    <loc>https://jj162.com.au/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://jj162.com.au/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj162.com.au/"/>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/zh/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://jj162.com.au/zh/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj162.com.au/articles.html"/>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/zh/articles/smsf-zijia-yanglao-jijin.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/zh/articles/yizhu-jiufen-quzheng-kuaiji.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/zh/articles/lihun-caichan-fenge-quzheng.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jj162.com.au/zh/articles/yizhu-xintuo-jihua.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
